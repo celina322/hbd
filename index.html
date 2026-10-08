@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Birthday Surprise 💗</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg"><span></span><span></span><span></span></div>
+
+<main class="wrap" id="wrap">
+ <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i></div>
+
+ <section class="screen active" id="s1">
+  <div class="dolls">
+   <div class="doll d1"><div class="head"><i class="eye e1"></i><i class="eye e2"></i><i class="mouth"></i></div><div class="body"></div></div>
+   <div class="doll d2"><div class="head"><i class="eye e1"></i><i class="eye e2"></i><i class="mouth"></i></div><div class="body"></div></div>
+   <div class="doll d3"><div class="head"><i class="eye e1"></i><i class="eye e2"></i><i class="mouth"></i></div><div class="body"></div></div>
+  </div>
+  <h1>Happy Birthday<br>My Adekkkk 💗</h1>
+  <p class="sub">Ada sesuatu ni penasaran takk...</p>
+  <div class="note">Hari ini spesial, karena ada yang nambah umur ga nambah tinggi. 🥺✨</div>
+  <button class="btn" data-go="2">Buka surat 💌</button>
+ </section>
+
+ <section class="screen" id="s2">
+  <h1>Untuk Kamu 💕</h1>
+  <div class="note letter">
+   Selamat ulang tahun, Adekkk. 🎂<br><br>
+   semoga tahun ini jauh lebih indah dari sebelumnya.<br><br>
+   <b>Kalau aku boleh minta satu hal...</b><br>
+   jangan lupa pesrepil oyy. 🤍
+  </div>
+  <button class="btn" data-go="3">Lanjutlah masa engga</button>
+ </section>
+
+ <section class="screen" id="s3">
+  <h1>Nah untuk kau ✨</h1>
+  <p class="sub">Telat setahun gapapa kan.</p>
+  <div class="cake" id="cake">
+   <div class="plate"></div>
+   <div class="tier"></div>
+   <div class="tier top"></div>
+   <div class="cream"></div>
+   <div class="candle" id="candle"><div class="flame"></div></div>
+  </div>
+  <button class="btn" id="blowBtn">Tiup lilin 🕯️</button>
+  <p class="small">Semoga jadi tinggi, ga pelit pesrepil dan ga selep lagi. 💗</p>
+ </section>
+
+ <section class="screen" id="s4">
+  <h1>Masih ada satu lagi 🎁</h1>
+  <p class="sub">Kadonya jangan dibuka ya.</p>
+  <div class="giftbox" id="gift"><div class="lid"></div><div class="bow"></div><div class="box"></div><div class="ribbon"></div></div>
+  <button class="btn" id="giftBtn">jangan buka 💝</button>
+ </section>
+
+ <section class="screen" id="s5">
+  <h1>HBDDDD 💗</h1>
+  <div class="note">
+   Kalau nanti engkau lupa betapa berharganya dirimu, balik lagi ke sini ya.<br><br>
+   Karena ada seseorang yang selalu berharap kamu bahagia, tersenyum, dan baik-baik saja.
+   <br><br><b>Happy Birthday, my Adekkk guwehhh. 🫶</b>
+  </div>
+  <div class="player" id="player">
+   <div class="track">
+    <div class="cover">🎵</div>
+    <div class="meta">
+     <div class="title">Nah anggap aja kadonya</div>
+     <div class="artist" id="status">💕</div>
+    </div>
+    <div class="eq"><b></b><b></b><b></b><b></b></div>
+   </div>
+   <div class="seek" id="seek"><i id="bar"></i></div>
+   <div class="times"><span id="cur">0:00</span><span id="dur">0:00</span></div>
+   <button class="btn play" id="play">▶ Play</button>
+  </div>
+ </section>
+
+ <audio id="music" src="musik.mp3" preload="auto" loop></audio>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
